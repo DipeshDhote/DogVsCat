@@ -24,7 +24,7 @@ This project is a Flask-based REST API that classifies uploaded images as either
 ---
 
 ## 🗂️ Project Structure
-
+```
 assignment/
 ├── model/
 │ └── mobilenetv2_catsdogs.pth # Trained model weights
@@ -32,7 +32,7 @@ assignment/
 ├── app.py # Flask app
 ├── myenv/ # Virtual environment (optional)
 └── README.md # Project documentation
-
+```
 
 ---
 
