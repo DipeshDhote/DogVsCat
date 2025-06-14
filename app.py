@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from model import load_model, predict,CLASSES
-from utils import get_transform, preprocess_image
+from utility import get_transform, preprocess_image
 
 app = Flask(__name__)
 
