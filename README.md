@@ -1,10 +1,10 @@
-# 🐱🐶 Cat vs Dog Image Classification API
+# Cat vs Dog Image Classification API
 
 This project is a Flask-based REST API that classifies uploaded images as either a **cat** or a **dog** using a fine-tuned **MobileNetV2** model in **PyTorch**.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Binary image classification (Cat / Dog)
 - RESTful API with Flask
@@ -14,7 +14,7 @@ This project is a Flask-based REST API that classifies uploaded images as either
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 - **Base Model**: MobileNetV2 (pretrained=False)
 - **Modified**: Final layer changed to `Linear(1280, 1)` for binary output
@@ -23,7 +23,7 @@ This project is a Flask-based REST API that classifies uploaded images as either
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 ```
 assignment/
 ├── model/
