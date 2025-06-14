@@ -36,10 +36,51 @@ assignment/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone 
-cd cat-vs-dog-api
+git clone https://github.com/DipeshDhote/DogVsCat.git
+cd DogVsCat-api
+```
+
+## API Endpoints
+
+1.Home
+URL: /
+Method: GET
+
+Response:
+
+json
+Copy
+Edit
+{
+  "success": true,
+  "content": "This is the home page of the Cat vs Dog Image Classification project"
+}
+
+2. Predict Image
+URL: /predict-image
+Method: POST
+Payload: multipart form with image file
+
+Example using cURL:
+
+bash
+Copy
+Edit
+curl -X POST http://127.0.0.1:5000/predict-image \
+     -F "file=@path_to_image.jpg"
+Response:
+
+json
+Copy
+Edit
+{
+  "success": true,
+  "label": "dog",
+  "confidence": 0.9823
+}
+
