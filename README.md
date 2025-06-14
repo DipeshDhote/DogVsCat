@@ -30,11 +30,10 @@ assignment/
 │ └── mobilenetv2_catsdogs.pth # Trained model weights
 ├── utility.py # Contains image transform function
 ├── app.py # Flask app
-├── myenv/ # Virtual environment (optional)
 └── README.md # Project documentation
-|___test.py
-|__LICENCE
-|_model.py
+|__ test.py # Url testing
+|__ LICENCE
+|__ model.py
 
 
 ```
