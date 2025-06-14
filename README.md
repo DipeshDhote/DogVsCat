@@ -28,10 +28,15 @@ This project is a Flask-based REST API that classifies uploaded images as either
 assignment/
 ├── model/
 │ └── mobilenetv2_catsdogs.pth # Trained model weights
-├── utils.py # Contains image transform function
+├── utility.py # Contains image transform function
 ├── app.py # Flask app
 ├── myenv/ # Virtual environment (optional)
 └── README.md # Project documentation
+|___test.py
+|__LICENCE
+|_model.py
+
+
 ```
 
 ---
@@ -54,13 +59,12 @@ Method: GET
 Response:
 
 json
-Copy
-Edit
+```
 {
   "success": true,
   "content": "This is the home page of the Cat vs Dog Image Classification project"
 }
-
+```
 2. Predict Image
 URL: /predict-image
 Method: POST
@@ -68,19 +72,16 @@ Payload: multipart form with image file
 
 Example using cURL:
 
-bash
-Copy
-Edit
-curl -X POST http://127.0.0.1:5000/predict-image \
+```
+curl -X POST http://127.0.0.1:5000/predict-image
      -F "file=@path_to_image.jpg"
+```
 Response:
 
-json
-Copy
-Edit
+```
 {
   "success": true,
   "label": "dog",
   "confidence": 0.9823
 }
-
+```
