@@ -32,4 +32,14 @@ assignment/
 ├── app.py # Flask app
 ├── myenv/ # Virtual environment (optional)
 └── README.md # Project documentation
-__
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone 
+cd cat-vs-dog-api
