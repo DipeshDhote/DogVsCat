@@ -1,0 +1,12 @@
+numpy
+pandas
+
+transformers
+torch
+
+flask
+
+python-dotenv
+
+torchvision
+pillow
